@@ -2,18 +2,23 @@ import {
   Links,
   LiveReload,
   Meta,
-  Outlet,
   Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+  ScrollRestoration
+} from '@remix-run/react'
+import Layout from './components/layout'
+import styles from './styles/app.css'
+
+export function links () {
+  return [{ rel: 'stylesheet', href: styles }]
+}
 
 export const meta = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1",
-});
+  charset: 'utf-8',
+  title: 'Vmldev',
+  viewport: 'width=device-width,initial-scale=1'
+})
 
-export default function App() {
+export default function App () {
   return (
     <html lang="en">
       <head>
@@ -21,11 +26,13 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <main className='bg-background text-white'>
+        <Layout/>
+        </main>
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
       </body>
     </html>
-  );
+  )
 }
