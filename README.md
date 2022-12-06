@@ -1,3 +1,29 @@
+# Readme
+
+Hi, I'm Victor Maldonado and this is my blog portfolio and personal page. This is my project for the #100DaysOfCode.
+
+It's built with remixJs and Tailwindcss.
+
+Based on Brittany Chiang's design, although programmed from scratch.
+
+you are free to use it, always contributing with a mention to those responsible for the design.
+
+
+## Development
+
+From your terminal:
+
+```sh
+npm run dev
+```
+
+## Photos and Images
+
+test
+test1 
+test3 
+etc
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
